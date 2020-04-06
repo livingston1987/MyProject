@@ -1,0 +1,210 @@
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("WeEnergy.feature");
+formatter.feature({
+  "line": 1,
+  "name": "WeEnergy Login",
+  "description": "",
+  "id": "weenergy-login",
+  "keyword": "Feature"
+});
+formatter.scenarioOutline({
+  "line": 2,
+  "name": "Validate the Successful login of User",
+  "description": "",
+  "id": "weenergy-login;validate-the-successful-login-of-user",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 3,
+  "name": "The User launches the WeEnergy website",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 4,
+  "name": "Entering  \"\u003cemail\u003e\" and \"\u003cpassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 5,
+  "name": "User is able to successfully login",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 6,
+  "name": "Close the browser",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 9,
+  "name": "",
+  "description": "",
+  "id": "weenergy-login;validate-the-successful-login-of-user;",
+  "rows": [
+    {
+      "cells": [
+        "email",
+        "password"
+      ],
+      "line": 10,
+      "id": "weenergy-login;validate-the-successful-login-of-user;;1"
+    },
+    {
+      "cells": [
+        "livingston7@gmail.com",
+        "Jclivida@10"
+      ],
+      "line": 11,
+      "id": "weenergy-login;validate-the-successful-login-of-user;;2"
+    },
+    {
+      "cells": [
+        "idascudder92@gmail.com",
+        "test123"
+      ],
+      "line": 12,
+      "id": "weenergy-login;validate-the-successful-login-of-user;;3"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 11,
+  "name": "Validate the Successful login of User",
+  "description": "",
+  "id": "weenergy-login;validate-the-successful-login-of-user;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 3,
+  "name": "The User launches the WeEnergy website",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 4,
+  "name": "Entering  \"livingston7@gmail.com\" and \"Jclivida@10\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 5,
+  "name": "User is able to successfully login",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 6,
+  "name": "Close the browser",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "WeEnergy.the_User_launches_the_WeEnergy_website()"
+});
+formatter.result({
+  "duration": 16195108500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "livingston7@gmail.com",
+      "offset": 11
+    },
+    {
+      "val": "Jclivida@10",
+      "offset": 39
+    }
+  ],
+  "location": "WeEnergy.entering_username_and_password(String,String)"
+});
+formatter.result({
+  "duration": 1119137400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WeEnergy.user_is_able_to_successfully_login()"
+});
+formatter.result({
+  "duration": 3721958200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WeEnergy.close_the_browser()"
+});
+formatter.result({
+  "duration": 735669100,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 12,
+  "name": "Validate the Successful login of User",
+  "description": "",
+  "id": "weenergy-login;validate-the-successful-login-of-user;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 3,
+  "name": "The User launches the WeEnergy website",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 4,
+  "name": "Entering  \"idascudder92@gmail.com\" and \"test123\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 5,
+  "name": "User is able to successfully login",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 6,
+  "name": "Close the browser",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "WeEnergy.the_User_launches_the_WeEnergy_website()"
+});
+formatter.result({
+  "duration": 14055406200,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "idascudder92@gmail.com",
+      "offset": 11
+    },
+    {
+      "val": "test123",
+      "offset": 40
+    }
+  ],
+  "location": "WeEnergy.entering_username_and_password(String,String)"
+});
+formatter.result({
+  "duration": 886090400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WeEnergy.user_is_able_to_successfully_login()"
+});
+formatter.result({
+  "duration": 20206718600,
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id\u003d\"welcome-user\"] (tried for 20 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat StepDefinitions.WeEnergy.user_is_able_to_successfully_login(WeEnergy.java:43)\r\n\tat ✽.Then User is able to successfully login(WeEnergy.feature:5)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"welcome-user\"]\"}\n  (Session info: chrome\u003d80.0.3987.163)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027IDA-LAPTOP\u0027, ip: \u0027192.168.1.22\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\\Users\\idasc\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 78ab5cc5ad320dac64d0eb435152931a\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"welcome-user\"]}\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor8.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat StepDefinitions.WeEnergy.user_is_able_to_successfully_login(WeEnergy.java:43)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat TestRunner.TestNG.feature(TestNG.java:41)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1507)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:766)\r\n\tat org.testng.TestRunner.run(TestRunner.java:587)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:384)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:286)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1109)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1039)\r\n\tat org.testng.TestNG.run(TestNG.java:1007)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "WeEnergy.close_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+});

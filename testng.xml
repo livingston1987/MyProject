@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BDD Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/idasc/IdeaProjects/myproject">
+        <classes>
+        <class name="TestRunner.TestNG"></class>
+        </classes>
+
+    </test>
+</suite>
